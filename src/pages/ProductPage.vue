@@ -4,8 +4,8 @@
     <div class="product-title">{{ product.title }}</div>
     <div class="product-details">
       <div class="inventory">In Stock: {{ product.inventory }}</div>
-      <button class="add-button" :disabled="!product.inventory"
-        @click="addToCart(product)">{{ product.inventory > 0 ? "Add to cart" : "Out Of Stock" }}</button>
+      <v-btn class="add-button" :disabled="!product.inventory"
+        @click="addToCart(product)">{{ product.inventory > 0 ? "Add to cart" : "Out Of Stock" }}</v-btn>
     </div>
   </div>
 </template>

@@ -35,7 +35,6 @@
 }
 
 .title {
-  color: #312377;
 }
 
 .price {

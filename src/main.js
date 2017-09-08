@@ -6,6 +6,16 @@ import router from './router'
 import store from './store/index'
 import { sync } from 'vuex-router-sync'
 
+/*
+* import vuetify and add it to vue
+* also import mdi materialdesignicons for icons
+*/
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+import 'mdi/css/materialdesignicons.css'
+
+Vue.use(Vuetify)
+
 sync(store, router)
 
 Vue.config.productionTip = false
